@@ -1,0 +1,18 @@
+
+{
+    "manifest_version" : 2,
+    "name" : "Google Meet Auto Leave",
+    "description" : "Automatically Leave Google Meet _abx",
+    "version" : "1.0.0",
+    "content_scripts":[
+        {"js": ["xmaster.js"],
+            "matches": ["http://meet.google.com/*", "https://meet.google.com/*"]
+        }
+    ],
+    "permissions" :[
+        "activeTab"
+    ],
+   
+    "icons" : {"128" : "googlemeettimer128x128.png"},
+    "browser_action" : {"default_icon" : "googlemeettimer128x128.png","default_popup": "pop.html"}
+}

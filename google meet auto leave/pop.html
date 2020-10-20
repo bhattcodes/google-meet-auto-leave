@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 300px;
+            height: 150px;
+            /* border-radius: 7px; */
+            /* background-color:rgb(180, 180, 180); */
+        }
+
+        .left {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 88px;
+        }
+
+        .logo {
+            width: 58px;
+            height: 67px;
+            position: absolute;
+            top: 25px;
+            left: 15px;
+            background-size: cover;
+            background-image: url("googlemeetlogo3.png");
+        }
+
+        .text {
+            font-family: 'Roboto', sans-serif;
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+
+        }
+
+        .right {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background-color: #099269e8;
+            width: 212px;
+            border-radius:4px;
+        }
+
+        .upper {
+            font-family: 'Roboto', sans-serif;
+            position: absolute;
+            top: 12px;
+            left: 8px;
+        }
+
+        .time {
+            font-family: 'Roboto', sans-serif;
+            position: absolute;
+            top: 41px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .inputval {
+            position: absolute;
+            top: 75px;
+            width: 190px;
+            left: 8px;
+            right: 8px;
+        }
+
+        .start {
+            font-family: 'Roboto', sans-serif;
+            width: 50px;
+            height: 25px;
+            position: absolute;
+            bottom: 9px;
+            left: 95px;
+            text-align: center;
+            padding: 0 0;
+            border-radius: 5px;
+
+        }
+
+        .stop {
+            font-family: 'Roboto', sans-serif;
+            position: absolute;
+            width: 50px;
+            height: 25px;
+            bottom: 9px;
+            right: 8px;
+            text-align: center;
+            padding: 0 0;
+            background-color: #FF8989;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+            </div>
+            <div class="text">Google Meet Auto Leave</div>
+        </div>
+
+        <div class="right">
+            <div class="upper">Timer</div>
+            <div class="time">
+
+                <span id="minchng">00 </span>
+                <span> Minutes :</span>
+                <div id="secchng">00 </div> Seconds
+
+
+            </div>
+
+            <input type="number" name="Timer" class="inputval " id="no" placeholder="  Enter Minutes">
+
+            <button id="btn" class="start">
+                start
+            </button>
+            <button id="btn2" class="stop">stop</button>
+
+
+        </div>
+
+
+    </div>
+
+
+    <script src="popup.js" defer></script>
+
+</body>
+</html>
